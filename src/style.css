@@ -44,7 +44,7 @@ input {
     background-color: transparent;
     outline: none;
     border: none;
-    height: 20px;
+    height: 30px;
     width: 200px;
     font-size: 24px;
     color: white;
@@ -103,6 +103,7 @@ input::placeholder {
 .weather-description {
     font-size: 28px;
     margin-bottom: 20px;
+    font-family: 'OpenSansLight';
 }
 
 .weather {
