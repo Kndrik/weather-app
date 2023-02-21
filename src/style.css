@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('./OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('./OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('./OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'OpenSansRegular';
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./background-gradient.jpg');
+    background-size: 100vw 100vh;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 200px;
+    font-size: 24px;
+    color: white;
+    font-family: 'OpenSansLight';
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.459);
+}
+
+.search-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+
+  color: white;
+}
+
+.material-symbols-rounded.search {
+    font-size: 28px;
+}
+
+.material-symbols-rounded.search:hover {
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city {
+    font-family: 'OpenSansLight';
+    font-size: 42px;
+}
+
+.temperature {
+    font-family: 'OpenSansBold';
+    font-size: 56px;
+}
+
+.weather-description {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.weather {
+    font-size: 140px;
+}
+
+.informations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box .title {
+    font-family: 'OpenSansBold';
+}
+
+.info-box .data {
+    font-family: 'OpenSansLight';
+}
