@@ -109,7 +109,7 @@ async function requestNewCity(value) {
 
 async function getCoordinatesFromCityName(value) {
     const coordinates = new Array(3);
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=1&appid=2f05fe6ff8b0e1dfa1bd432d77789e6c`);
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=1&appid=2f05fe6ff8b0e1dfa1bd432d77789e6c`);
     const responseJson = await response.json();
     coordinates[0] = responseJson[0].lat;
     coordinates[1] = responseJson[0].lon;
